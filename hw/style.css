@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 40px;
+}
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.showcase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1164px;
+  margin: 0 auto 24px;
+}
+h1.showcase-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2b2e4a;
+}
+.btn-showcase {
+  width: 214px;
+  height: 50px;
+  border: 1px solid #e2e8f0;
+  border-radius: 25px;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2b2e4a;
+  cursor: pointer;
+  text-align: center;
+  line-height: 48px;
+  text-decoration: none;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  width: 570px;
+  height: 340px;
+  padding: 32px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.card-text {
+  flex: 1;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  color: #4a4a4a;
+}
+.btn {
+  align-self: flex-start;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.card--light { background-color: #EBEAED; }
+.card--outline {
+  background-color: #ffffff;
+  border: 1px solid #e2e8e8;
+}
+.card--dark {
+  background-color: #482BE7;
+  color: #ffffff;
+}
+.card--dark .card-text {
+  color: rgba(255,255,255,0.85);
+}
+.card--postcards { color: #ffffff; }
+.card--postcards .card-title,
+.card--postcards .card-text {
+  color: #ffffff;
+}
+
+.btn--primary,
+.btn--secondary,
+.btn--light,
+.btn--outline-white {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid #e2e8f0;
+}
